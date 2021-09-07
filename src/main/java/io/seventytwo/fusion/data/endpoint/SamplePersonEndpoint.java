@@ -1,27 +1,22 @@
 package io.seventytwo.fusion.data.endpoint;
 
+import com.vaadin.flow.server.auth.AnonymousAllowed;
+import com.vaadin.flow.server.connect.Endpoint;
 import io.seventytwo.fusion.data.entity.SamplePerson;
 import io.seventytwo.fusion.data.service.SamplePersonService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.vaadin.artur.helpers.GridSorter;
+import org.vaadin.artur.helpers.PagingUtil;
 
 import java.util.List;
 import java.util.Optional;
-
-import com.vaadin.flow.server.connect.Endpoint;
-
-import org.vaadin.artur.helpers.GridSorter;
-import org.springframework.data.domain.Page;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.vaadin.artur.helpers.PagingUtil;
-import javax.validation.constraints.Email;
-import java.time.LocalDate;
-import javax.annotation.Nullable;
-import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 @Endpoint
 @AnonymousAllowed
 public class SamplePersonEndpoint {
 
-    private SamplePersonService service;
+    private final SamplePersonService service;
 
     public SamplePersonEndpoint(@Autowired SamplePersonService service) {
         this.service = service;

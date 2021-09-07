@@ -1,3 +1,6 @@
 {
-    "lit-plugin.strict": true
+    "lit-plugin.strict": true,
+    "java.completion.enabled": false,
+    "java.debug.settings.enableRunDebugCodeLens": false,
+    "java.test.editor.enableShortcuts": false
 }

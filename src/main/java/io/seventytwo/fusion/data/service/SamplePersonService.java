@@ -1,7 +1,6 @@
 package io.seventytwo.fusion.data.service;
 
 import io.seventytwo.fusion.data.entity.SamplePerson;
-import io.seventytwo.fusion.data.repository.SamplePersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.vaadin.artur.helpers.CrudService;

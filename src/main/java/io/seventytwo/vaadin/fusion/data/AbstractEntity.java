@@ -1,14 +1,17 @@
-package io.seventytwo.fusion.data;
+package io.seventytwo.vaadin.fusion.data;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+
+import com.vaadin.fusion.Nonnull;
 
 @MappedSuperclass
 public abstract class AbstractEntity {
 
     @Id
     @GeneratedValue
+    @Nonnull
     private Integer id;
 
     public Integer getId() {

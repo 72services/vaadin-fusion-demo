@@ -1,15 +1,18 @@
-package io.seventytwo.fusion.data.service;
+package io.seventytwo.vaadin.fusion.data.service;
 
-import io.seventytwo.fusion.data.entity.SamplePerson;
-import io.seventytwo.fusion.data.repository.SamplePersonRepository;
+import io.seventytwo.vaadin.fusion.data.entity.SamplePerson;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.vaadin.artur.helpers.CrudService;
+import com.vaadin.fusion.Nonnull;
+import javax.validation.constraints.Email;
+import java.time.LocalDate;
 
 @Service
 public class SamplePersonService extends CrudService<SamplePerson, Integer> {
 
-    private final SamplePersonRepository repository;
+    private SamplePersonRepository repository;
 
     public SamplePersonService(@Autowired SamplePersonRepository repository) {
         this.repository = repository;

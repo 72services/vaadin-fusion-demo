@@ -1,4 +1,4 @@
-package io.seventytwo.fusion;
+package io.seventytwo.vaadin.fusion;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.server.PWA;
@@ -17,8 +17,8 @@ import com.vaadin.flow.theme.Theme;
  *
  */
 @SpringBootApplication
-@Theme(value = "vaadinfusiondemo")
-@PWA(name = "Vaadin Fusion Demo", shortName = "Vaadin Fusion Demo", offlineResources = {"images/logo.png"})
+@Theme(value = "fusiondemo")
+@PWA(name = "FusionDemo", shortName = "FusionDemo", offlineResources = {"images/logo.png"})
 public class Application extends SpringBootServletInitializer implements AppShellConfigurator {
 
     public static void main(String[] args) {

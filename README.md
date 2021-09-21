@@ -4,17 +4,19 @@ This project can be used as a starting point to create your own Vaadin applicati
 It contains all the necessary configuration and some placeholder files to get you started.
 
 ## Running the application
+
 The project is a standard Maven project. To run it from the command line,
 type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+http://localhost:8181 in your browser.
 
-You can also import the project to your IDE of choice as you would with any 
-Maven project. Read more on [how to set up a development environment for 
+You can also import the project to your IDE of choice as you would with any
+Maven project. Read more on [how to set up a development environment for
 Vaadin projects](https://vaadin.com/docs/latest/guide/install) (Windows, Linux, macOS).
 
 ## Deploying to Production
+
 To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw  clean package -Pproduction` (Mac & Linux).
+or `./mvnw clean package -Pproduction` (Mac & Linux).
 This will build a JAR file with all the dependencies and front-end resources,
 ready to be deployed. The file can be found in the `target` folder after the build completes.
 

@@ -1,12 +1,12 @@
-package io.seventytwo.fusion.data.generator;
+package io.seventytwo.vaadin.fusion.data.generator;
 
 import com.vaadin.flow.spring.annotation.SpringComponent;
 
-import io.seventytwo.fusion.data.entity.SamplePerson;
+import io.seventytwo.vaadin.fusion.data.service.SamplePersonRepository;
+import io.seventytwo.vaadin.fusion.data.entity.SamplePerson;
 
 import java.time.LocalDateTime;
 
-import io.seventytwo.fusion.data.repository.SamplePersonRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -31,7 +31,7 @@ public class DataGenerator {
 
             logger.info("... generating 100 Sample Person entities...");
             ExampleDataGenerator<SamplePerson> samplePersonRepositoryGenerator = new ExampleDataGenerator<>(
-                    SamplePerson.class, LocalDateTime.of(2021, 9, 7, 0, 0, 0));
+                    SamplePerson.class, LocalDateTime.of(2021, 9, 21, 0, 0, 0));
             samplePersonRepositoryGenerator.setData(SamplePerson::setId, DataType.ID);
             samplePersonRepositoryGenerator.setData(SamplePerson::setFirstName, DataType.FIRST_NAME);
             samplePersonRepositoryGenerator.setData(SamplePerson::setLastName, DataType.LAST_NAME);

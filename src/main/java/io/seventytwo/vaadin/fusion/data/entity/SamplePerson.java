@@ -1,23 +1,28 @@
-package io.seventytwo.fusion.data.entity;
+package io.seventytwo.vaadin.fusion.data.entity;
 
 import javax.persistence.Entity;
 
-import io.seventytwo.fusion.data.AbstractEntity;
+import io.seventytwo.vaadin.fusion.data.AbstractEntity;
+import com.vaadin.fusion.Nonnull;
 import javax.validation.constraints.Email;
 import java.time.LocalDate;
-import javax.annotation.Nullable;
 
 @Entity
 public class SamplePerson extends AbstractEntity {
 
+    @Nonnull
     private String firstName;
+    @Nonnull
     private String lastName;
     @Email
+    @Nonnull
     private String email;
+    @Nonnull
     private String phone;
-    @Nullable
     private LocalDate dateOfBirth;
+    @Nonnull
     private String occupation;
+    @Nonnull
     private boolean important;
 
     public String getFirstName() {

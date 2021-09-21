@@ -1,7 +1,7 @@
 package io.seventytwo.fusion.data.endpoint;
 
 import com.vaadin.flow.server.auth.AnonymousAllowed;
-import com.vaadin.fusion.Endpoint;
+import com.vaadin.flow.server.connect.Endpoint;
 import io.seventytwo.fusion.data.entity.SamplePerson;
 import io.seventytwo.fusion.data.service.SamplePersonService;
 import org.springframework.beans.factory.annotation.Autowired;

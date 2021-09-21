@@ -14,8 +14,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.vaadin.artur.helpers.PagingUtil;
 
 import com.vaadin.fusion.Nonnull;
+
 import javax.validation.constraints.Email;
 import java.time.LocalDate;
+
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 @Endpoint
@@ -24,7 +26,7 @@ public class SamplePersonEndpoint {
 
     private SamplePersonService service;
 
-    public SamplePersonEndpoint(@Autowired SamplePersonService service) {
+    public SamplePersonEndpoint(SamplePersonService service) {
         this.service = service;
     }
 

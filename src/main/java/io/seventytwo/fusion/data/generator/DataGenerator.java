@@ -2,11 +2,11 @@ package io.seventytwo.fusion.data.generator;
 
 import com.vaadin.flow.spring.annotation.SpringComponent;
 
-import io.seventytwo.fusion.data.service.SamplePersonRepository;
 import io.seventytwo.fusion.data.entity.SamplePerson;
 
 import java.time.LocalDateTime;
 
+import io.seventytwo.fusion.data.repository.SamplePersonRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
